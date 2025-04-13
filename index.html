@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Chrome Extension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .title {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bolder;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+        }
+        .shimmer {
+            background: linear-gradient(90deg, #6366f1, #a855f7, #6366f1);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center px-6">
+<main class="text-center max-w-2xl">
+    <h1 class="title">
+        Never do VHL again.
+    </h1>
+    <p class="text-lg sm:text-xl text-gray-300 mb-10">
+        VHL autofills <i>every</i> question on VHLCentral, including creative answer responses, with Quizlet based, AI refined answers using our proprietary BailesEngine.
+    </p>
+    <a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer"
+       class="inline-block px-8 py-4 rounded-2xl text-lg font-semibold shimmer transition transform hover:scale-105 shadow-lg", style="font-family: 'JetBrains Mono', monospace; font-weight: bolder">
+        ➕ Add to Chrome
+    </a>
+</main>
+</body>
+</html>
